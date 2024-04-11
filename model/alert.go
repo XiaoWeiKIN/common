@@ -35,6 +35,7 @@ type Alert struct {
 	Annotations LabelSet `json:"annotations"`
 
 	// The known time range for this alert. Both ends are optional.
+	TriggerAt    time.Time `json:"triggerAt"`
 	StartsAt     time.Time `json:"startsAt,omitempty"`
 	EndsAt       time.Time `json:"endsAt,omitempty"`
 	GeneratorURL string    `json:"generatorURL"`
