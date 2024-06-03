@@ -41,7 +41,7 @@ type Alert struct {
 	GeneratorURL string    `json:"generatorURL"`
 	SentCount    int64     `json:"sentCount"`
 	Stage        string    `json:"stage"`
-	PreStage     string    `json:"preStage"`
+	ClaimAt      time.Time `json:"claimAt"`
 }
 
 // Name returns the name of the alert. It is equivalent to the "alertname" label.
